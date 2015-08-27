@@ -2,14 +2,16 @@ require('mapbox.js');
 document.location.hash = '';
 var token = 'pk.eyJ1IjoicnViZW4iLCJhIjoiYlBrdkpRWSJ9.JgDDxJkvDn3us36aGzR6vg';
 var mapid = 'ruben.n9e0l5jk';
-
 L.mapbox.accessToken = token;
 var map = L.mapbox.map('map', mapid, {
 	infocontrol: true,
-	zoomControl: true,
+	zoomControl: false,
 	center: [-13, -74],
 	zoom: 10
 });
+
+new L.Control.Zoom({ position: 'topright' }).addTo(map);
+
 var assetLayerGroup = L.layerGroup().addTo(map);
 map.on('click', function(e) {
 	//map.panTo(e.latlng);

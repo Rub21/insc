@@ -6,10 +6,39 @@
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
     <link href='https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet' />
+    <link href='https://www.mapbox.com/base/latest/base.css' rel='stylesheet' />
     <link href='css/style.css' rel='stylesheet' />
   </head>
   <body>
     <div id='map'></div>
+    <div class='col6 clearfix classform'>
+      <div class='col12 pad2 fill-darken3'>
+        <form class='dark'>
+          <fieldset class='pad2x'>
+          </fieldset>
+          <div class='col12 pad2 fill-navy'>
+            <p>Incidentes Delictivos
+              Actualmente en la ciudad de Ayacucho los incidentes delictivos son una actividad cotidiana,como sucede en cualquier otro lugar, la Sub Gerencia de Seguridad Ciudadana encargado de la seguridad en la ciudad de Ayacucho pone a disposición sus datos, para el conocimiento de la ciudadania, con finalidad de prevenir incidentes futuros en ciertos lugares de la ciudad.
+            El mapa de arriba muestra los puntos donde ocurrieron los incidentes delictivos, estos datos son recolectados, ingresados y publicados por la Sub Gerencia de Seguridad Ciudadana de la Municipalidad Provincial de Humanga con la iniciativa de Datos Abiertos.</p>
+          </div>
+          <fieldset class='pad2x'>
+            <label>Tipo de incidente</label>
+            <input class='col12 block clean' id='tipo' type='text' name='name' placeholder='Tipo de incidente' />
+          </fieldset>
+          <fieldset class='pad2x'>
+            <label>Fecha y Hora</label>
+            <input class='col12 block clean' id='tipo' type='text' name='name' placeholder='Fecha' />
+          </fieldset>
+          <fieldset class='pad2x'>
+            <label>Descripcion</label>
+            <textarea class='col12 block clean resize' id='descripcion' type='text' name='description' placeholder='Descripcion del Incidente' ></textarea>
+          </fieldset>
+          <div class='pad2x pad1y  round-bottom col12 clearfix'>
+            <input class='col6 margin3 button' type='submit' value='Create Task' />
+          </div>
+        </form>
+      </div>
+    </div>
     <script src="js/bundle.js"></script>
   </body>
 </html>
