@@ -1,0 +1,19 @@
+{
+  "name": "reg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "watchify -d -t reactify src/index.js -o js/bundle.js & serve"
+  },
+  "devDependencies": {
+    "reactify": "^1.1.0",
+    "serve": "^1.4.0",
+    "watchify": "^2.4.0"
+  },
+  "author": "Ruben Lopez M <ruben@mapbox.com> (http://rub21.github.io/)",
+  "license": "ISC",
+  "dependencies": {
+    "mapbox.js": "^2.2.1"
+  }
+}
